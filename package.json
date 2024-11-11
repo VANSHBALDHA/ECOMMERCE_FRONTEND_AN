@@ -1,0 +1,48 @@
+{
+    "name": "ecommerce_frontend",
+    "version": "3.0.0",
+    "private": true,
+    "author": "nouthemes",
+    "keywords": [
+        "react",
+        "reactjs",
+        "ecommerce",
+        "nextjs",
+        "next"
+    ],
+    "scripts": {
+        "dev": "node server.js",
+        "turbo": "next dev --turbo",
+        "build": "next build",
+        "start": "NODE_ENV=production node server.js"
+    },
+    "dependencies": {
+        "@ant-design/icons": "^5.3.7",
+        "@reduxjs/toolkit": "^2.2.1",
+        "ahooks": "^3.7.8",
+        "antd": "^5.15.3",
+        "axios": "^1.6.7",
+        "bootstrap": "^5.3.3",
+        "classnames": "^2.5.1",
+        "js-cookie": "^3.0.5",
+        "lightgallery": "^2.7.2",
+        "moment": "^2.30.1",
+        "next": "^14.1.0",
+        "otp-input-react": "^0.3.0",
+        "qs": "^6.11.2",
+        "react": "^18.2.0",
+        "react-cookie": "^7.0.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^5.2.1",
+        "react-redux": "^9.0.4",
+        "react-slick": "^0.29.0",
+        "redux": "^5.0.1",
+        "sass": "^1.69.7",
+        "swiper": "^11.0.7"
+    },
+    "devDependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "@types/node": "20.10.6",
+        "typescript": "5.3.3"
+    }
+}

@@ -1,0 +1,84 @@
+.ps-section--wishlist .table-responsive {
+  overflow-x: auto;
+}
+.ps-section--wishlist .cart-table-content table {
+  border: 1px solid #ebebeb;
+}
+
+.ps-section--wishlist table {
+  border-collapse: collapse;
+  caption-side: bottom;
+  width: 100%;
+}
+
+.ps-section--wishlist tbody,
+.ps-section--wishlist td,
+.ps-section--wishlist tfoot,
+.ps-section--wishlist th,
+.ps-section--wishlist thead,
+.ps-section--wishlist tr {
+  border: 0 solid;
+  border-color: inherit;
+}
+
+.ps-section--wishlist .cart-table-content table thead > tr {
+  background-color: #f9f9f9;
+  border: 1px solid #ebebeb;
+}
+
+.ps-section--wishlist .cart-table-content table thead > tr th {
+  border-top: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 21px 45px 22px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.ps-section--wishlist .cart-table-content table tbody > tr {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.ps-section--wishlist
+  .cart-table-content
+  table
+  tbody
+  > tr
+  td.product-thumbnail {
+  width: 70px;
+}
+
+.ps-section--wishlist .cart-table-content table tbody > tr td {
+  color: #333;
+  font-size: 15px;
+  padding: 20px 0 20px 20px;
+  text-align: center;
+}
+
+.ps-section--wishlist .cart-table-content table tbody > tr td.product-name {
+  text-align: left;
+  width: 235px;
+}
+
+.ps-section--wishlist
+  .cart-table-content
+  table
+  tbody
+  > tr
+  td.product-price-cart {
+  width: 235px;
+}
+.ps-section--wishlist .cart-table-content table tbody > tr td.product-remove {
+  width: 100px;
+}
+
+.ps-section--wishlist button {
+  background: none;
+  border: none;
+  color: #ff0000;
+  font-size: 27px;
+  margin: 0 13px;
+}

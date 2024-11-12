@@ -23,7 +23,7 @@ export default function Page() {
         <PageContainer footer={<FooterDefault />} title="Contact Us">
             <div className="ps-page--single" id="contact-us">
                 <BreadCrumb breacrumb={breadCrumb} />
-                <ContactMap />
+                {/* <ContactMap /> */}
                 <ContactInfo />
                 <ContactForm />
             </div>

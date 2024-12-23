@@ -88,7 +88,7 @@ export default function Compare() {
                                                 <Link
                                                     href={'/product/[pid]'}
                                                     as={`/product/${product.id}`}>
-                                                    {thumbnailImage}
+                                                    {products?.thumbnailImage}
                                                 </Link>
                                             </div>
                                             <div className="ps-product__content">

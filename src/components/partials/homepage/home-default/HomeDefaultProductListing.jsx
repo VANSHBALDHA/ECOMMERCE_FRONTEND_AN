@@ -92,7 +92,7 @@ const HomeDefaultProductListing = ({ categorySlug, title }) => {
                 <div className="ps-section__header">
                     <h3>{title}</h3>
                     <ul className="ps-section__links">
-                        {sectionLinksView}
+                        {/* {sectionLinksView} */}
                         <li>
                             <Link href={`/shop`}>View All</Link>
                         </li>

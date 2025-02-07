@@ -40,23 +40,23 @@ const FooterWidgets = () => (
             <h4 className="widget-title">Quick links</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/privacy-policy">Privacy & Policy</Link>
+                    <Link href="/privacy-policy">Privacy & Policy</Link>
                 </li>
 
                 <li>
-                    <Link href="/page/terms">Term & Condition</Link>
+                    <Link href="/terms">Term & Condition</Link>
                 </li>
                 <li>
-                    <Link href="/page/shipping">Shipping</Link>
+                    <Link href="/shipping">Shipping</Link>
                 </li>
                 <li>
-                    <Link href="/page/return-policy">Return</Link>
+                    <Link href="/return-policy">Return</Link>
                 </li>
                 <li>
-                    <Link href="/page/faqs">FAQs</Link>
+                    <Link href="/faqs">FAQs</Link>
                 </li>
                 <li>
-                    <Link href="/page/quality-process">Quality Process</Link>
+                    <Link href="/quality-process">Quality Process</Link>
                 </li>
             </ul>
         </aside>
@@ -65,19 +65,19 @@ const FooterWidgets = () => (
             <h4 className="widget-title">Company</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/about-us">About Us</Link>
+                    <Link href="/about-us">About Us</Link>
                 </li>
                 <li>
-                    <Link href="/page/affilate">Affilate</Link>
+                    <Link href="/affilate">Affilate</Link>
                 </li>
                 <li>
-                    <Link href="/page/career">Career</Link>
+                    <Link href="/career">Career</Link>
                 </li>
                 <li>
-                    <Link href="/page/contact-us">Contact Us</Link>
+                    <Link href="/contact-us">Contact Us</Link>
                 </li>
                 <li>
-                    <Link href="/page/why-choose-us">Why Choose Us?</Link>
+                    <Link href="/why-choose-us">Why Choose Us?</Link>
                 </li>
             </ul>
         </aside>
@@ -86,7 +86,7 @@ const FooterWidgets = () => (
             <h4 className="widget-title">Bussiness</h4>
             <ul className="ps-list--link">
                 <li>
-                    <Link href="/page/about-us">Our Press</Link>
+                    <Link href="/about-us">Our Press</Link>
                 </li>
                 <li>
                     <Link href="/account/checkout">Checkout</Link>

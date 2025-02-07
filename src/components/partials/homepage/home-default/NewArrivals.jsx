@@ -46,7 +46,7 @@ const NewArrivals = ({ collectionSlug }) => {
         <div className="ps-product-list ps-new-arrivals">
             <div className="ps-container">
                 <div className="ps-section__header">
-                    <h3>Hot New Arrivals</h3>
+                    <h3>Recent Views Products</h3>
                     <ul className="ps-section__links">
                         {categories?.map((category) => (
                             <li key={category.id}>

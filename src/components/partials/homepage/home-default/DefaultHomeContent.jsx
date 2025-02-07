@@ -17,21 +17,21 @@ export default function DefaultHomeContent() {
             <HomeDefaultBanner />
             <SiteFeatures />
             <HomeDefaultDealOfDay collectionSlug="deals-of-the-day" />
-            <HomeAdsColumns />
+            {/* <HomeAdsColumns /> */}
             <HomeDefaultTopCategories />
             <HomeDefaultProductListing
                 categorySlug="consumer-electronics"
-                title="Consumer Electronics"
+                title="Featured Products"
             />
-            <HomeDefaultProductListing
+            {/* <HomeDefaultProductListing
                 categorySlug="clothings"
                 title="Clothings"
-            />
-            <HomeDefaultProductListing
+            /> */}
+            {/* <HomeDefaultProductListing
                 categorySlug="garden-and-kitchen"
                 title="Garden & Kitchen"
-            />
-            <HomeAds />
+            /> */}
+            {/* <HomeAds /> */}
             {/* <DownLoadApp /> */}
             <NewArrivals collectionSlug="hot-new-arrivals" />
             {/* <Newletters /> */}

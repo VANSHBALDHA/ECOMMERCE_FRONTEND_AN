@@ -9,7 +9,7 @@ const SiteFeatures = () => (
             <i className="icon-rocket" />
           </div>
           <div className="ps-block__right">
-            <h4>Over 950,000 (Auto get number – from setting via Admin)</h4>
+            <h4>Over 950,000 </h4>
             <p>Available online</p>
           </div>
         </div>
@@ -18,9 +18,7 @@ const SiteFeatures = () => (
             <i className="icon-sync" />
           </div>
           <div className="ps-block__right">
-            <h4>
-              5000+ (Auto get number – from Setting via Admin) new products
-            </h4>
+            <h4>5000+ new products</h4>
             <p>Added every Year</p>
           </div>
         </div>

@@ -6,7 +6,7 @@ const FooterCopyright = () => {
   return (
     <>
       <div className="ps-footer__copyright">
-        <p>&copy; {currentYear} Bieprocure. All Rights Reserved</p>
+        <p>&copy; {currentYear} VEKART. All Rights Reserved</p>
         {/* <p>
             <span>We Using Safe Payment For:</span>
             <a href="#">

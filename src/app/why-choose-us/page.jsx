@@ -1,32 +1,46 @@
-'use client';
-import React from 'react';
-import BreadCrumb from '~/components/elements/BreadCrumb';
-import Policy from '~/components/partials/page/Policy';
-import FooterDefault from '~/components/shared/footers/FooterDefault';
-import PageContainer from '~/components/layouts/PageContainer';
-import Newletters from '~/components/partials/commons/Newletters';
-import WhyChooseUs from '~/components/partials/page/WhyChooseUs';
+"use client";
+
+import React from "react";
+import { Helmet } from "react-helmet";
+
+import BreadCrumb from "~/components/elements/BreadCrumb";
+import FooterDefault from "~/components/shared/footers/FooterDefault";
+import PageContainer from "~/components/layouts/PageContainer";
+import WhyChooseUs from "~/components/partials/page/WhyChooseUs";
+
+import getHeadData from "~/utilities/seo/RoutePathsSEO";
 
 export default function Page() {
-    const breadCrumb = [
-        {
-            text: 'Home',
-            url: '/',
-        },
-        {
-            text: 'Why Choose us?',
-        },
-    ];
+  const breadCrumb = [{ text: "Home", url: "/" }, { text: "Why Choose Us?" }];
 
-    return (
-        <PageContainer footer={<FooterDefault />} title="FAQ page">
-            <div className="ps-page--single">
-                <BreadCrumb breacrumb={breadCrumb} />
-                <div className="container">
-                    <WhyChooseUs />
-                </div>
-            </div>
-            {/* <Newletters layout="container" /> */}
-        </PageContainer>
-    );
+  const seoData = getHeadData("/why-choose-us");
+
+  return (
+    <>
+      <Helmet>
+        <title>{seoData?.title}</title>
+        <meta name="description" content={seoData?.desc} />
+        <link rel="canonical" href={seoData.canonical} />
+        <meta
+          name="robots"
+          content={`${seoData.isIndexed ? "index" : "noindex"},${
+            seoData.followLinks ? "follow" : "nofollow"
+          }`}
+        />
+        <meta property="og:title" content={seoData.title} />
+        <meta property="og:description" content={seoData.desc} />
+        <meta property="og:url" content={seoData.canonical} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
+      <PageContainer footer={<FooterDefault />} title={seoData.title}>
+        <div className="ps-page--single">
+          <BreadCrumb breacrumb={breadCrumb} />
+          <div className="container">
+            <WhyChooseUs />
+          </div>
+        </div>
+      </PageContainer>
+    </>
+  );
 }

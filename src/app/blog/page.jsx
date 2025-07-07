@@ -1,33 +1,50 @@
-'use client';
-import BlogItemsGridView from '~/components/partials/blog/BlogItemsGridView';
-import BreadCrumb2 from '~/components/elements/BreadCrumb2';
-import FooterDefault from '~/components/shared/footers/FooterDefault';
-import PageContainer from '~/components/layouts/PageContainer';
-import Newletters from '~/components/partials/commons/Newletters';
+"use client";
+
+import React from "react";
+import { Helmet } from "react-helmet";
+
+import BlogItemsGridView from "~/components/partials/blog/BlogItemsGridView";
+import BreadCrumb2 from "~/components/elements/BreadCrumb2";
+import FooterDefault from "~/components/shared/footers/FooterDefault";
+import PageContainer from "~/components/layouts/PageContainer";
+import Newletters from "~/components/partials/commons/Newletters";
+
+import getHeadData from "~/utilities/seo/RoutePathsSEO";
 
 export default function Page() {
-    const breadCrumb = [
-        {
-            text: 'Home',
-            url: '/',
-        },
-        {
-            text: 'Our Press',
-        },
-    ];
+  const breadCrumb = [{ text: "Home", url: "/" }, { text: "Our Press" }];
 
-    return (
-        <PageContainer footer={<FooterDefault />} title="Blog ">
-            <div className="ps-page--blog">
-                <div className="container">
-                    <div className="ps-page__header">
-                        <h1>Our Press</h1>
-                        <BreadCrumb2 breacrumb={breadCrumb} />
-                    </div>
-                    <BlogItemsGridView columns={4} />
-                </div>
+  const seoData = getHeadData("/blog");
+  return (
+    <>
+      <Helmet>
+        <title>{seoData?.title}</title>
+        <meta name="description" content={seoData?.desc} />
+        <link rel="canonical" href={seoData.canonical} />
+        <meta
+          name="robots"
+          content={`${seoData.isIndexed ? "index" : "noindex"},${
+            seoData.followLinks ? "follow" : "nofollow"
+          }`}
+        />
+        <meta property="og:title" content={seoData.title} />
+        <meta property="og:description" content={seoData.desc} />
+        <meta property="og:url" content={seoData.canonical} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
+      <PageContainer footer={<FooterDefault />} title={seoData.title}>
+        <div className="ps-page--blog">
+          <div className="container">
+            <div className="ps-page__header">
+              <h1>{seoData.title}</h1>
+              <BreadCrumb2 breacrumb={breadCrumb} />
             </div>
-            {/* <Newletters layout="container" /> */}
-        </PageContainer>
-    );
+            <BlogItemsGridView columns={4} />
+          </div>
+        </div>
+        {/* <Newletters layout="container" /> */}
+      </PageContainer>
+    </>
+  );
 }
